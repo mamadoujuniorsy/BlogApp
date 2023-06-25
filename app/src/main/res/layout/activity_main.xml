@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#EFEDED">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SimpleBlog"
+        android:textStyle="bold"
+        android:textSize="45sp"
+        android:textColor="@android:color/black"
+        android:layout_margin="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/blogContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Add your dynamic content here -->
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:id="@+id/newBlog"
+        android:text="+"
+        android:textSize="40sp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="end"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@android:color/black" />
+
+</LinearLayout>

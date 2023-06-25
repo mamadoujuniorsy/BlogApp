@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:orientation="vertical"
+    android:background="#EFEDED"
+    tools:context=".MainActivity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="SimpleBlog"
+    android:textSize="45px"
+    android:textStyle="bold"
+    android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter un article"
+        android:textSize="30px"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="50px"
+        android:gravity="center"/>
+<EditText
+    android:id="@+id/etTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Titre"
+    android:layout_marginBottom="8dp"
+    android:textColor="@color/black"
+    android:background="@color/white"
+    android:layout_gravity="center"
+    android:padding="20px"
+    />
+
+<EditText
+    android:id="@+id/etContent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Contenu"
+    android:layout_marginBottom="8dp"
+    android:background="@color/white"
+    android:layout_gravity="center"
+    android:textColor="@color/black"
+    android:padding="16dp"
+    android:height="345dp"
+    />
+
+<Button
+android:id="@+id/btnAdd"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Ajouter"
+android:layout_below="@+id/etContent"
+android:layout_marginBottom="8dp"
+ android:layout_gravity="center"
+  android:textColor="@color/white"
+    android:backgroundTint="@color/black"/>
+<Button
+    android:id="@+id/returnBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="x"
+    android:textSize="40px"
+    android:textColor="@color/white"
+    android:backgroundTint="@color/black"
+    android:layout_gravity="end"
+    android:layout_marginTop="250px"
+    />
+</LinearLayout>
